@@ -1,0 +1,8 @@
+/* Image List specific Scoped CSS */
+
+.imageListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 .25rem;
+  grid-auto-rows: 8px;
+}

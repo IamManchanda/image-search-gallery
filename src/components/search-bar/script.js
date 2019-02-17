@@ -25,7 +25,7 @@ const SearchBar = class extends Component {
           <input type="text" className={ imageSearchTextBox } placeholder="Search for Images" value={ this.state.searchTerm } onChange={ this.handleInputChange } />
         </div>
         <div className="cell small-4 medium-2">
-          <input type="submit" className="button" value="Search" />
+          <input type="submit" className="radius bordered button" value="Search" />
         </div>
       </form>
     </Fragment>;

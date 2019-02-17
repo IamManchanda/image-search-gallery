@@ -11,7 +11,7 @@ const Home = class extends Component {
 
   handleSearchSubmit = async (searchTerm) => {
     const query = searchTerm;
-    const response = await unsplashApi.get('/search/photos', { params: { query } });
+    const response = await unsplashApi.get('/search/photos', { params: { query, per_page: 30 } });
     const { results: images } = response.data;
     this.setState({ images });
   }
@@ -27,7 +27,7 @@ const Home = class extends Component {
           </ul>
         </div>
       </div>
-      <div className="grid-container fluid">
+      <div className="grid-container fluid ">
         <div className="grid-x grid-padding-x grid-padding-y">
           <div className="cell">
             <ImageList images={ images } />
