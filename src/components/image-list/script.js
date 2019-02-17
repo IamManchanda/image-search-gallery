@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react';
 
-const ImageList = ({ images }) => <Fragment>
-  { console.log(images) }
-  {
-    (images && images.length)
-      ? <h3>Found: { images.length } images.</h3>
-    : null
-  }
-</Fragment>;
+const ImageList = ({ images }) => {
+  const renderedImages = images.map(({ urls, id, description }) => {
+    return <img src={ urls.regular } key={ id } alt={ description } title={ description } />
+  });
+  return <Fragment>{ renderedImages }</Fragment>;
+}
 
 ImageList.defaultProps = {
   images: [],
