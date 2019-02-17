@@ -10,7 +10,7 @@ const ImageCard = class extends Component {
 
   setSpans = () => {
     const { clientHeight: height } = this.imageRef.current;
-    const spans = Math.ceil(height / 8) + 4;
+    const spans = Math.ceil((height / 8) + 3);
     this.setState({ spans });
   };
 
