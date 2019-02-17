@@ -1,0 +1,11 @@
+/* Image Card specific Scoped CSS */
+
+.imageListCellCard {
+  max-width: 300px;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+.imageListCellCard img {
+  object-fit: cover;
+}

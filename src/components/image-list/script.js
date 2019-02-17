@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react';
+import ImageCard from '../image-card/script';
+import { imageListContainer } from './scoped.module.css';
 
 const ImageList = ({ images }) => {
-  const renderedImages = images.map(({ urls, id, description }) => {
-    return <img src={ urls.regular } key={ id } alt={ description } title={ description } />
+  const renderedImages = images.map((image) => {
+    return <ImageCard image={ image } key={ image.id } />
   });
-  return <Fragment>{ renderedImages }</Fragment>;
+  return (images && images.length) ? <Fragment>
+    <div className={ imageListContainer }>{ renderedImages }</div>
+  </Fragment> : null;
 }
 
 ImageList.defaultProps = {
