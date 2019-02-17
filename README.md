@@ -1,5 +1,13 @@
 # Image Search Gallery in React
 
+## Credits
+
+This Image Search Gallery was made while learning from this below tutorial.
+
+- [Modern React with Redux [2019 Update]](https://www.udemy.com/react-redux/)
+
+That being said, lot of Styling is either mine or from [Foundation Framework](https://foundation.zurb.com/sites/docs/). Moreover all the codes in the source code (Logic and/or Styling) has been written with with my preferred coding style.
+
 ## Installation & Usage
 
 1. Install [Node](https://nodejs.org/en/) (& `npm` that comes with it)
