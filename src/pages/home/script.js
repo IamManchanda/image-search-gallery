@@ -24,7 +24,7 @@ const Home = class extends Component {
   render() {
     const { images } = this.state;
     return <Fragment>
-      <div className={ `top-bar ${topBarSpacing}`}>
+      <div className={ `top-bar shadow ${topBarSpacing}`}>
         <div className="top-bar-left">
           <ul className="menu">
             <li className={ `menu-text ${menuTextFont}` }>Search for Images</li>
