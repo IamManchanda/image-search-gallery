@@ -28,7 +28,7 @@ const Home = class extends Component {
         <div className="top-bar-left">
           <ul className="menu">
             <li className={ `menu-text ${menuTextFont}` }>Search for Images</li>
-            <li><SearchBar onFormSubmit={ this.handleSearchSubmit } /></li>
+            <li><SearchBar onFormSubmit={ this.handleSearchSubmit } imagesLength={ images.length } /></li>
           </ul>
         </div>
       </div>
