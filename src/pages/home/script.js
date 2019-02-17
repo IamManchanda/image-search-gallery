@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import SearchBar from '../../components/search-bar/script';
-import { menuTextFont } from './scoped.module.css';
+import { topBarSpacing, menuTextFont } from './scoped.module.css';
 
 const Home = class extends Component {
   handleSearchSubmit = (searchTerm) => {
@@ -9,14 +9,12 @@ const Home = class extends Component {
 
   render() {
     return <Fragment>
-      <div className="top-bar">
+      <div className={ `top-bar ${topBarSpacing}`}>
         <div className="top-bar-left">
-          <ul className="dropdown menu" data-dropdown-menu>
+          <ul className="menu">
             <li className={ `menu-text ${menuTextFont}` }>Image Search</li>
+            <li><SearchBar onFormSubmit={ this.handleSearchSubmit } /></li>
           </ul>
-        </div>
-        <div className="top-bar-right">
-          <SearchBar onFormSubmit={ this.handleSearchSubmit } />
         </div>
       </div>
     </Fragment>;
