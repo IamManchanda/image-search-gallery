@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import unsplashApi from '../../api/unsplash';
 import SearchBar from '../../components/search-bar/script';
+import ImageList from '../../components/image-list/script';
 import { topBarSpacing, menuTextFont } from './scoped.module.css';
 
 const Home = class extends Component {
@@ -26,15 +27,10 @@ const Home = class extends Component {
           </ul>
         </div>
       </div>
-      { console.log({ images }) }
       <div className="grid-container fluid">
         <div className="grid-x grid-padding-x grid-padding-y">
           <div className="cell">
-            {
-              (images && images.length)
-                ? <h3>Found: { images.length } images</h3>
-              : null
-            }
+            <ImageList images={ images } />
           </div>
         </div>
       </div>
