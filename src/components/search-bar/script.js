@@ -16,7 +16,7 @@ const SearchBar = class extends Component {
     event.preventDefault();
     const { searchTerm } = this.state;
     const { onFormSubmit } = this.props;
-    onFormSubmit(searchTerm);
+    onFormSubmit(searchTerm.toLowerCase());
     this.setState({ allowUpdatingSearchTerm: true, });
   };
 
