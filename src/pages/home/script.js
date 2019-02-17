@@ -12,12 +12,13 @@ const Home = class extends Component {
   handleSearchSubmit = async (searchTerm) => {
     const query = searchTerm;
     const images = [];
-    for (const item of [ ...3 ]) {
+    for (const item of [ ...5 ]) {
       const response = await unsplashApi.get('/search/photos', { params: { query, page: item, per_page: 30 } });
       const { results } = response.data;
       images.push(...results);
+      this.setState({ images });
+      console.log('Current Fetched Images Length:', images.length);
     }
-    this.setState({ images });
   }
 
   render() {
