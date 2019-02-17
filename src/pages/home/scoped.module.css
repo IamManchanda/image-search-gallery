@@ -1,9 +1,9 @@
 /* Homepage specific Scoped CSS */
 
 .topBarSpacing {
-  padding: 1rem !important;
+  padding: 1rem .125rem !important;
 }
 
 .menuTextFont {
-  font-size: 110% !important;
+  font-size: 115% !important;
 }

@@ -32,4 +32,8 @@ const SearchBar = class extends Component {
   }
 };
 
+SearchBar.defaultProps = {
+  onFormSubmit: () => {},
+};
+
 export default SearchBar;
