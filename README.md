@@ -1,8 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Image Search Gallery in React
 
-## Available Scripts
+## Installation & Usage
 
-In the project directory, you can run:
+1. Install [Node](https://nodejs.org/en/) (& `npm` that comes with it)
+2. Run `npm install`
+3. Login or Register at https://unsplash.com/developers
+4. Create a new application at Unsplash Developer. There you will find an access key which you can use.
+5. Copy that access key and update it [here](https://github.com/IamManchanda/image-search-gallery/blob/master/src/api/unsplash.js#L5).
+6. Run `npm start` to run this on your local server. 
 
 ### `npm start`
 
@@ -11,6 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+## More Details (Optional)
+
+See more details below if you want to do more in case.
 
 ### `npm test`
 
