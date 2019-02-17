@@ -11,9 +11,8 @@ const Home = class extends Component {
 
   handleSearchSubmit = async (searchTerm) => {
     const query = searchTerm;
-    const range = (count) => Array.from({ length: count }, (v, i) => i + 1); // Helper Function
     const images = [];
-    for (const item of range(3)) {
+    for (const item of [ ...3 ]) {
       const response = await unsplashApi.get('/search/photos', { params: { query, page: item, per_page: 30 } });
       const { results } = response.data;
       images.push(...results);
